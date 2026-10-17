@@ -5,18 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eric Garcia McKinley, PhD</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 <section class="hero">
-  <img src="headshot-600.jpg" alt="Headshot of Eric" class="hero-photo">
+  <div class="hero-left">
+    <img src="headshot-600.jpg" alt="Headshot of Eric" class="hero-photo">
+
+    <div class="hero-icons">
+      <a href="mailto:eric@theimpactarchitects.com" aria-label="Email Eric">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/eric-garcia-mckinley-phd-3a47b4122" target="_blank" rel="noopener" aria-label="Eric on LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+
+    <div class="hero-buttons">
+      <a href="#about" class="button">About me</a>
+      <a href="#projects" class="button">Projects</a>
+    </div>
+  </div>
+
   <div class="hero-text">
     <h1>Eric Garcia McKinley, PhD</h1>
-    <p class="hero-title">Learning and Evaluation, Impact Architects</p>
+    <p class="hero-title">Learning, Evaluation, and Visual Storytelling</p>
     <p class="hero-intro">Let's turn your impact data into a visual story.</p>
   </div>
 </section>
-  <!-- your content goes here -->
 
+<section id="about" class="page-section">
+  <h2>About me</h2>
+  <p>As Director of Learning and Evaluation at Impact Architects,
+    I support partners at every step of the learning process—from developing and 
+    refining questions to telling the story of impact through data.
+  </p>
+</section>
+
+<section id="projects" class="page-section">
+  <h2>Projects</h2>
+  <div id="projects-chart"></div>
+</section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

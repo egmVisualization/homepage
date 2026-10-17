@@ -1,3 +1,10 @@
+:root {
+  --midnight: #0E2240;
+  --sunshine: #FEC524;
+  --flatirons: #8B2131;
+  --skyline: #1D428A;
+  --background: #EEF2F9;
+}
 * {
   box-sizing: border-box;
 }
@@ -6,7 +13,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: #1f2933;
-  background: #ffffff;
+  background: var(--background);
   line-height: 1.5;
 }
 
@@ -17,7 +24,7 @@ body {
   gap: 3rem;
   max-width: 960px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 6rem 1.5rem 4rem;
 }
 
 .hero-photo {
@@ -111,4 +118,44 @@ html {
   margin: 0 auto;
   padding: 60px 20px;
   min-height: 400px;
+}
+#projects-chart {
+  position: relative;
+}
+
+.project-bar {
+  fill: var(--skyline);
+  cursor: pointer;
+}
+
+.project-bar:hover {
+  fill: var(--midnight);
+}
+
+.project-label {
+  font-size: 14px;
+  fill: var(--midnight);
+}
+
+.chart-tooltip {
+  position: absolute;
+  max-width: 260px;
+  padding: 10px 14px;
+  background: var(--midnight);
+  color: white;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+
+.chart-tooltip.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.chart-tooltip a {
+  color: var(--sunshine);
 }

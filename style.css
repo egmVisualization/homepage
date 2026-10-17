@@ -163,3 +163,40 @@ html {
   padding-top: 0;
   min-height: auto;
 }
+.webinar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.webinar-text {
+  flex: 1;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.webinar-video {
+  flex: 0 0 400px;
+  max-width: 100%;
+}
+
+.webinar-video iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .webinar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .webinar-video {
+    flex-basis: auto;
+    width: 100%;
+  }
+}

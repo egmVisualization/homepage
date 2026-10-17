@@ -159,3 +159,7 @@ html {
 .chart-tooltip a {
   color: var(--sunshine);
 }
+.chart-section {
+  padding-top: 0;
+  min-height: auto;
+}
